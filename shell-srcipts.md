@@ -17,6 +17,25 @@
 #!/path/to/CommandInterpreter
 ```
 
+## 变量（Variables）
+
+```shell
+# 变量引用，于变量名加美元符号
+$var
+```
+
+## 函数（Functions）
+
+```shell
+# 函数声明（Function Declaration）
+fun() {
+  statements
+}
+
+# 函数调用（Function Calling）
+fun
+```
+
 ## 输入/输出（Input/Output）
 
 ```shell
