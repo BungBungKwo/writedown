@@ -53,7 +53,7 @@ read
 | :---: | :---: |
 | -eq | 相等 |
 | -gt | 大于 |
-| `[[ string1 == sting2 ]]` | 字符串比较 |
+| `[[ string1 == sting2 ]]` 或 `[ "string1" = "string2" ]` | 字符串比较 |
 | `[[ string1 > string2 ]]` | 字符串排序 |
 | `strlen=${string}` | 字符串长度 |
 
