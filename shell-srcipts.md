@@ -26,6 +26,8 @@ $var
 
 ## 函数（Functions）
 
+函数是实现一系列操作的代码块。
+
 ```shell
 # 函数声明（Function Declaration）
 fun() {
@@ -44,6 +46,42 @@ echo "Message"
 # 利用 read 读取输入
 read
 ```
+
+## 比较
+
+| 类型 | |
+| :---: | :---: |
+| -eq | 相等 |
+| -gt | 大于 |
+| `[[ string1 == sting2 ]]` | 字符串比较 |
+| `[[ string1 > string2 ]]` | 字符串排序 |
+| `strlen=${string}` | 字符串长度 |
+
+## 检测
+
+存在性检测: -f（文件是否存在），-d（目录是否存在）
+
+## 结构
+
+if结构
+
+```shell
+if [ condition ] ; then
+  Statements
+elif [ condition ] ; then
+  Statements
+else
+  Statements
+fi
+```
+
+## 算术表达式（Arithmetic Expressions）
+
+多种方法：
+- expr工具：numA op numB
+- $((...))
+- let工具：let expression
+- var=$((...))
 
 **命令串接（Chaining Commands）**
 
