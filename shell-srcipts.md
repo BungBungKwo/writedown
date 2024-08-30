@@ -101,14 +101,14 @@ done
 ```
 
 ```shell
-while condition  is true
+while condition
 do
   Statements
 done
 ```
 
 ```shell
-until condition is false
+until condition
 do
   Statements
 done
