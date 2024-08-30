@@ -63,7 +63,9 @@ read
 
 ## 结构
 
-if结构
+### 条件结构
+
+if：进行条件选择
 
 ```shell
 if [ condition ] ; then
@@ -73,6 +75,43 @@ elif [ condition ] ; then
 else
   Statements
 fi
+```
+
+case ：用于匹配多个情况，易读性易用性强
+
+```shell
+case expression in
+  pattern1) execute commands;;
+  pattern2) execute commands;;
+  pattern3) execute commands;;
+  pattern4) execute commands;;
+  *)        execute some default commands or nothing ;;
+esac
+```
+
+### 循环结构
+
+for循环：变量循环次数
+
+```shell
+for var in list
+do
+  statements
+done
+```
+
+```shell
+while condition  is true
+do
+  Statements
+done
+```
+
+```shell
+until condition is false
+do
+  Statements
+done
 ```
 
 ## 算术表达式（Arithmetic Expressions）
@@ -124,6 +163,12 @@ cat `ls`
 ## 内置命令查询
 
 在 shell prompt 处输入 `help` 即可
+
+# Debug
+
+```shell
+bash -x ./script_file
+```
 
 # 常见 shell
 
